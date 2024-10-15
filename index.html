@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>World Head Football</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="overlay">
+			<span id="countdown"></span>
+		</div>
+		<div class="overlay">
+			<span id="win"></span>
+		</div>
+		<div class="overlay">
+			<span id="pause">Pause</span>
+		</div>
+
+		<div id="welcome" class="root">
+			<div id="form">
+				<div id="title">
+					<img width="72" height="72" src="Sprites/Ball 02.png" alt="Ball" />
+					<h1>WORLD HEAD FOOTBALL</h1>
+				</div>
+				<input type="text" id="username" placeholder="Input Username" />
+				<select id="country">
+					<option disabled selected value="placeholder">Select Country</option>
+					<option value="Brazil">Brazil</option>
+					<option value="England">England</option>
+					<option value="Germany">Germany</option>
+					<option value="Italy">Italy</option>
+					<option value="Japan">Japan</option>
+					<option value="Netherlands">Netherlands</option>
+					<option value="Portugal">Portugal</option>
+					<option value="Spain">Spain</option>
+				</select>
+				<select id="opponentCountry">
+					<option disabled selected value="placeholder">
+						Select Opponent Country
+					</option>
+					<option value="Brazil">Brazil</option>
+					<option value="England">England</option>
+					<option value="Germany">Germany</option>
+					<option value="Italy">Italy</option>
+					<option value="Japan">Japan</option>
+					<option value="Netherlands">Netherlands</option>
+					<option value="Portugal">Portugal</option>
+					<option value="Spain">Spain</option>
+				</select>
+				<select id="level">
+					<option disabled selected value="placeholder">Select Level</option>
+					<option value="easy">Easy</option>
+					<option value="medium">Medium</option>
+					<option value="hard">Hard</option>
+				</select>
+				<select id="ball">
+					<option disabled selected value="placeholder">Select Ball</option>
+					<option value="1">Ball 1</option>
+					<option value="2">Ball 2</option>
+				</select>
+				<div id="buttons">
+					<button id="play" disabled>Play Game</button>
+					<button id="showInstruction">Instruction</button>
+				</div>
+			</div>
+			<div id="instruction">
+				<button id="closeButton">x</button>
+
+				<h1>How to play game</h1>
+				<ol>
+					<li>Input Username</li>
+					<li>Move character to bounce ball</li>
+					<li>Get high score and win</li>
+					<li>Enjoy!</li>
+				</ol>
+			</div>
+		</div>
+
+		<div id="game" class="root">
+			<img id="background" src="./Sprites/background1.jpg" alt="background" />
+			<div id="countryFlags">
+				<img class="flag1"></img>
+				<img class="flag2"></img>
+				<img class="flag1"></img>
+				<img class="flag2"></img>
+				<img class="flag1"></img>
+				<img class="flag2"></img>
+				<img class="flag1"></img>
+				<img class="flag2"></img>
+				<img class="flag1"></img>
+				<img class="flag2"></img>
+				<img class="flag1"></img>
+			</div>
+
+			<img id="goalSide1" src="Sprites/GoalSide.png" width="96"></img>
+			<img id="goalSide2" src="Sprites/GoalSide.png" width="96"></img>
+			<img id="player1" height="128"></img>
+			<img id="player2" height="128"></img>
+			<img id="theBall" width="48" height="48" />
+
+			<div id="flag1">
+				<img id="flag1Image" />
+				<p id="flag1Name"></p>
+			</div>
+			<div id="score">
+				<p id="score1">0</p>
+				<p id="score2">0</p>
+			</div>
+			<div id="timer">
+				<h1>TIMER</h1>
+				<p id="timerSecond"></p>
+			</div>
+			<div id="flag2">
+				<img id="flag2Image" />
+				<p id="flag2Name"></p>
+			</div>
+
+			<button id="showMatchHistory">Match History</button>
+		</div>
+
+		<script type="module" src="script.js"></script>
+	</body>
+</html>
